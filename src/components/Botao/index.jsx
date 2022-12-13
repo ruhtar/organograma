@@ -1,3 +1,5 @@
+import "./Botao.css";
+
 export default function Botao(props) {
-  return <button>{props.textoBotao}</button>;
+  return <button className="botao">{props.children}</button>;
 }

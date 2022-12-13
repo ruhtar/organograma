@@ -20,7 +20,7 @@ export default function Formulario() {
         <CampoTexto label="Cargo" placeholder="Informe o seu cargo" />
         <CampoTexto label="Imagem" placeholder="Informe o endereço da imagem" />
         <ListaSuspensa label="Times" itens={times} />
-        <Botao textoBotao={"Criar card"} />
+        <Botao>Criar card</Botao>
       </form>
     </section>
   );
