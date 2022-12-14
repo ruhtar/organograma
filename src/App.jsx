@@ -62,6 +62,7 @@ function App() {
             key={time.nome}
             corPrimaria={time.corPrimaria}
             corSecundaria={time.corSecundaria}
+            colaboradores={colaboradores}
           ></Time>
         );
       })}
