@@ -62,8 +62,10 @@ function App() {
             key={time.nome}
             corPrimaria={time.corPrimaria}
             corSecundaria={time.corSecundaria}
-            colaboradores={colaboradores}
-          ></Time>
+            colaboradores={colaboradores.filter(
+              colaborador => {return colaborador.time === time.nome}
+            )}
+          />
         );
       })}
     </div>
