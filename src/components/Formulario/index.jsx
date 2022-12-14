@@ -4,16 +4,6 @@ import CampoTexto from "../CampoTexto";
 import ListaSuspensa from "../ListaSuspensa";
 import Botao from "../Botao";
 export default function Formulario(props) {
-  const times = [
-    "Programação",
-    "Front-end",
-    "Data-Science",
-    "Devops",
-    "UX e Design",
-    "Mobile",
-    "Inovação e Gestão",
-  ];
-
   function aoSalvar(event) {
     event.preventDefault();
     props.aoSalvarColaborador({
@@ -55,7 +45,7 @@ export default function Formulario(props) {
         />
         <ListaSuspensa
           label="Times"
-          itens={times}
+          itens={props.times}
           obrigatorio={true}
           valor={time}
           aoAlterar={valor => setTime(valor)}

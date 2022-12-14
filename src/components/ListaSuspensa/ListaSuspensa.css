@@ -3,6 +3,7 @@
 }
 
 .lista-suspensa label{
+    font-weight: bold;
     display: block;
     margin-bottom: 8px;
     font-size: 24px;
