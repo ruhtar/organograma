@@ -15,6 +15,7 @@ export default function Formulario(props) {
     setNome("");
     setCargo("");
     setImagem("");
+    setTime("");
   }
 
   const [nome, setNome] = useState("");

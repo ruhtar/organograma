@@ -9,6 +9,7 @@ export default function ListaSuspensa(props) {
         value={props.valor}
         onChange={evento => props.aoAlterar(evento.target.value)}
       >
+        <option value=""></option>
         {props.itens.map(item => {
           return <option key={item}>{item}</option>;
         })}
