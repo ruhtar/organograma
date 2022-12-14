@@ -1,13 +1,14 @@
 .time {
+    display: block;
     text-align: center;
     padding: 32px;
-    background-color: #D9f7e9;
+    /* background-color: #D9f7e9; */
 }
 
 .time h3{
     display: block;
-    font-size: 32px;
-    border-bottom: 4px solid #57c278;
     display: inline-block;
+    font-size: 32px;
+    border-bottom: 4px solid;
     padding-bottom: 8px;
 }

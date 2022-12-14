@@ -55,7 +55,16 @@ function App() {
         times={times.map(item => item.nome)}
         aoSalvarColaborador={colaborador => adicionarColaborador(colaborador)}
       />
-      <Time times={times} />
+      {times.map(time => {
+        return (
+          <Time
+            nome={time.nome}
+            key={time.nome}
+            corPrimaria={time.corPrimaria}
+            corSecundaria={time.corSecundaria}
+          ></Time>
+        );
+      })}
     </div>
   );
 }
